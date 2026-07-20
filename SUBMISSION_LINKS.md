@@ -1,10 +1,10 @@
 # Submission Links
 
 Source Code / Figma file or similar:
-C:\Users\Asus\OneDrive\Desktop\zudioa.zip
+https://github.com/ayushyawale/project-loop
 
 Live Deployment:
-http://localhost:3000
+https://project-loop-demo.vercel.app (or your deployed Vercel URL)
 
 Demo Video:
 Pending — add your walkthrough video link here
