@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Project LOOP
 
-## Getting Started
+Project LOOP is a polished full-stack demo inspired by the Zidio internship brief. It presents a multi-tenant feedback intelligence experience with:
 
-First, run the development server:
+- a workspace-style dashboard
+- a feedback inbox with search, filters, pagination, and status workflow
+- theme clustering and trend views
+- a grounded Ask LOOP experience over seeded feedback
+- saved Voice-of-Customer reports
+
+## Stack
+
+- Next.js 16 + TypeScript
+- Tailwind CSS
+- Recharts
+- Lucide icons
+
+## Run locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Demo credentials
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Admin: admin@northstar.dev / demo-admin
+- Analyst: analyst@northstar.dev / demo-analyst
+- Viewer: viewer@northstar.dev / demo-viewer
 
-## Learn More
+## Project structure
 
-To learn more about Next.js, take a look at the following resources:
+- app/(app) contains the authenticated product pages
+- lib/demo-store.ts holds seeded demo data and simple state mutations
+- lib/seed-data.ts includes the initial workspace, users, feedback, themes, and report seeds
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Notes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This repository implements a strong front-end and product experience to match the LOOP brief. It uses seeded demo data rather than a live database because the current workspace does not include a hosted Postgres/Anthropic setup.
